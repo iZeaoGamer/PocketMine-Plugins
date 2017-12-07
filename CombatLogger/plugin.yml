@@ -1,10 +1,6 @@
 name: CombatLogger
-description: Simple plugin that allows you to punish combat loggers!
-author: Jack Noordhuis
+description: Simple plugin that allows you to punish combat loggers! (Updated for latest PMMP Builds.)
+author: VMPE Development Team
 main: jacknoordhuis\combatlogger\CombatLogger
-version: 0.0.4
-api:
-  - 3.0.0-ALPHA9
-  - 3.0.0-ALPHA6
-  - 3.0.0-ALPHA7
-  - 3.0.0-ALPHA8
+version: 0.0.5
+api: [3.0.0-ALPHA9, 3.0.0-ALPHA10]
