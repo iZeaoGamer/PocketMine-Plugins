@@ -20,7 +20,7 @@ namespace jacknoordhuis\combatlogger;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
-use pocketmine\utils\TextFormat as TF;
+use pocketmine\utils\TextFormat;
 
 class CombatLogger extends PluginBase {
 
@@ -44,7 +44,7 @@ class CombatLogger extends PluginBase {
 		$this->setMessageManager();
 		$this->setListener();
 		$this->startHeartbeat();
-		$this->getLogger()->info(TF::AQUA . "CombatLogger v0.0.4" . TF::GREEN . " by " . TF::YELLOW . "JackNoordhuis" . TF::GREEN . ", Loaded successfully!");
+		$this->getLogger()->info(TF::AQUA . "CombatLogger v0.0.5" . TF::GREEN . " by " . TF::YELLOW . "JackNoordhuis" . TF::GREEN . ", Loaded successfully!");
 	}
 
 	public function loadConfigs() {
@@ -54,7 +54,7 @@ class CombatLogger extends PluginBase {
 
 	public function onDisable() {
 		$this->taggedPlayers = [];
-		$this->getLogger()->info(TF::AQUA . "CombatLogger v0.0.4" . TF::GOLD . " by " . TF::YELLOW . "JackNoordhuis" . TF::GOLD . ", has been disabled!");
+		$this->getLogger()->info(TF::AQUA . "CombatLogger v0.0.5" . TF::GOLD . " by " . TF::YELLOW . "JackNoordhuis" . TF::GOLD . ", has been disabled!");
 	}
 
 	/**
