@@ -17,7 +17,7 @@
 
 namespace jacknoordhuis\combatlogger;
 
-use pocketmine\utils\TextFormat as TF;
+use pocketmine\utils\TextFormat;
 
 class MessageManager {
 
