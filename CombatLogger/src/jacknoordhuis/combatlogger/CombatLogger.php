@@ -107,12 +107,13 @@ class CombatLogger extends PluginBase {
 	 * @param bool $value
 	 * @param int $time
 	 */
-	public function setTagged($player, $value = true, int $time = 10) {
+	public function setTagged(Player $player, bool $value = true, int $time = 10) {
 		if($player instanceof Player) $player = $player->getName();
 		if($value) {
 			$this->taggedPlayers[$player] = $time;
 		} else {
 			unset($this->taggedPlayers[$player]);
+			return true;
 		}
 	}
 
@@ -121,7 +122,7 @@ class CombatLogger extends PluginBase {
 	 *
 	 * @return bool
 	 */
-	public function isTagged($player) {
+	public function isTagged(Player $player) {
 		if($player instanceof Player) $player = $player->getName();
 		return isset($this->taggedPlayers[$player]);
 	}
@@ -131,7 +132,7 @@ class CombatLogger extends PluginBase {
 	 *
 	 * @return int
 	 */
-	public function getTagDuration($player) {
+	public function getTagDuration(Player $player) {
 		if($player instanceof Player) $player = $player->getName();
 		return ($this->isTagged($player) ? $this->taggedPlayers[$player] : 0);
 	}
