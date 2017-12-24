@@ -48,7 +48,7 @@ class MessageManager {
 	 *
 	 * @return mixed|string
 	 */
-	public function parseMessage(string $message, string $symbol = "&") {
+	public function parseMessage(string $message, $symbol = "&") {
 		$message = str_replace($symbol . "0", TF::BLACK, $message);
 		$message = str_replace($symbol . "1", TF::DARK_BLUE, $message);
 		$message = str_replace($symbol . "2", TF::DARK_GREEN, $message);
