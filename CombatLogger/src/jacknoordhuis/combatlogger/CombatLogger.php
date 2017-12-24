@@ -20,7 +20,7 @@ namespace jacknoordhuis\combatlogger;
 use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
-use pocketmine\utils\TextFormat;
+use pocketmine\utils\TextFormat as TF;
 
 class CombatLogger extends PluginBase {
 
