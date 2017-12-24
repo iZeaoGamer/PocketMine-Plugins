@@ -34,7 +34,7 @@ class TaggedHeartbeatTask extends PluginTask {
 		foreach($plugin->taggedPlayers as $name => $time) {
 			$time--;
 			if($time <= 0) {
-				$plugin->setTagged($name, false);
+				$plugin->setTagged(string $name, false);
 				$player = $plugin->getServer()->getPlayerExact($name);
 				if($player instanceof Player) $player->sendMessage($plugin->getMessageManager()->getMessage("player-tagged-timeout"));
 				return true;
